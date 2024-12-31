@@ -1,0 +1,69 @@
+body{
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid red;
+    display: flex;
+}
+
+.password{
+    position: relative;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle{
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+
+}
+
+.password input{
+    width: 70%;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.far {
+    font-size: 20px;
+    color: gray;
+
+}
+
+.far:hover{
+    color: #000;
+}
+
+.toggle .fa-eye-slash{
+    display: none;
+}
+
+.toggle.hide .fa-eye-slash{
+    display: block;
+}
+
+.toggle.hide .fa-eye{
+    display: none;
+}
